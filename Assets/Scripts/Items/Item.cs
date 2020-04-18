@@ -14,13 +14,20 @@ public class Item : MonoBehaviour {
     private Rigidbody _rb;
     public LayerMask layerMask;
     private void Awake() {
+        GameManager.Instance.OnMouseUpListener += OnMouseUp;
         _rb = GetComponent<Rigidbody>();
 
         canMove = true;
     }
+    private void OnDestroy() {
+        if (GameManager.Instance != null) {
+            GameManager.Instance.OnMouseUpListener -= OnMouseUp;
+        }
+    }
     private void OnMouseDown() {
         dragging = true;
     }
+
     private void OnMouseUp() {
         dragging = false;
     }
@@ -31,8 +38,8 @@ public class Item : MonoBehaviour {
                 Vector3 mouse = Input.mousePosition;
                 Ray castPoint = Camera.main.ScreenPointToRay(mouse);
                 RaycastHit hit;
-                if (Physics.Raycast(castPoint, out hit, Mathf.Infinity,layerMask)) {
-                    transform.position = new Vector3(hit.point.x,transform.position.y,hit.point.z);
+                if (Physics.Raycast(castPoint, out hit, Mathf.Infinity, layerMask)) {
+                    transform.position = new Vector3(hit.point.x, Mathf.Clamp(transform.position.y, 0.5f, 5), hit.point.z);
                 }
             }
         }

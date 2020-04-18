@@ -8,7 +8,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour {
             if (m_instance == null) {
                 m_instance = (T)FindObjectOfType(typeof(T));
 
-                if (!m_instance && Application.isEditor) Debug.LogError("Instance of" + typeof(T) + " not found");
+                if (!m_instance && Application.isEditor) Debug.LogError("Instance of " + typeof(T) + " not found");
 
             }
 

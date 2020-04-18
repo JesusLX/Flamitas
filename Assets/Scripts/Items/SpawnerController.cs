@@ -28,7 +28,7 @@ public class SpawnerController : Singleton<SpawnerController>
             item = Instantiate(prefab);
             poolItems.Add(item);
         }
-        item.transform.position = new Vector3(item.transform.position.x, 3, item.transform.position.z);
+        //item.transform.position = new Vector3(item.transform.position.x, 3, item.transform.position.z);
         item.SetActive(true);
         item.GetComponent<Item>().canMove = true;
         item.GetComponent<Item>().dragging = true;
