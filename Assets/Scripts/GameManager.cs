@@ -46,4 +46,9 @@ public class GameManager : Singleton<GameManager> {
         inventoryItems[itemId] += SpawnerController.Instance.DisablePickedItems(itemId);
         UIManager.Instance.UpdateItem(itemId, inventoryItems[itemId]);
     }
+
+    public void updateCoins(int newCoins) {
+        this.coins += newCoins;
+        ShopManager.Instance.updateCoinsText();
+    }
 }

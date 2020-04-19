@@ -10,7 +10,7 @@ public class Item : MonoBehaviour {
     public float curDuration;
     public float resistence;
     public float force;
-    public float Price;
+    public int Price;
     public bool canMove;
     public bool dragging;
     public bool burning;
