@@ -10,6 +10,8 @@ public class ShopManager : Singleton<ShopManager> {
     public GameObject layoutShopPanel;
     public GameObject UIShopItemPrefab;
 
+    private bool showingShop = false;
+
     private void Start() {
         // Supuestamente solo se llama una vez :)
         fillLayoutShopPanel();
@@ -50,6 +52,7 @@ public class ShopManager : Singleton<ShopManager> {
         clearShopList();
 
         foreach (GameObject item in SpawnerController.Instance.ItemsPrefabs) {
+            Debug.Log("Me llamaron");
             Item tmp = item.GetComponent<Item>();
 
             GameObject prefab = Instantiate(UIShopItemPrefab, layoutShopPanel.transform);
@@ -63,8 +66,14 @@ public class ShopManager : Singleton<ShopManager> {
     }
 
     private void clearShopList() {
+        Debug.Log("me llamaron");
         for (int i = layoutShopPanel.transform.childCount - 1; i >= 0; i--) {
             Destroy(layoutShopPanel.transform.GetChild(i).gameObject);
         }
+    }
+
+    public void showShop() {
+        showingShop = !showingShop;
+        layoutShopPanel.transform.parent.gameObject.SetActive(showingShop);
     }
 }
