@@ -39,18 +39,23 @@ public class SpawnerController : Singleton<SpawnerController> {
         item.SetActive(true);
         item.GetComponent<Item>().canMove = true;
         GameManager.Instance.OnItemSpawned(itemId);
+        item.GetComponent<Item>().Init();
+        item.GetComponent<Collider>().enabled = true;
+
         return item;
     }
     public void MovePickedItemToSpawn() {
         GameObject item = poolItems.Find(o => o.GetComponent<Item>().dragging == true);
         if (item) {
+            item.GetComponent<Collider>().enabled = false;
             item.transform.position = this.gameObject.transform.position;
             item.GetComponent<Item>().dragging = false;
+            item.GetComponent<Collider>().enabled = true;
         }
     }
     public int DisablePickedItems(int id) {
         int count = poolItems.FindAll(o => (o.GetComponent<Item>().dragging == true && o.GetComponent<Item>().ID == id)).Count;
-        poolItems.FindAll(o => (o.GetComponent<Item>().dragging == true && o.activeInHierarchy == true)).ForEach(o => o.SetActive(false));
+        poolItems.FindAll(o => (o.GetComponent<Item>().dragging == true && o.activeInHierarchy == true)).ForEach(o => o.GetComponent<Item>().Hide());
         return count;
     }
 }

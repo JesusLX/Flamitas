@@ -91,7 +91,7 @@ BoxCollider:
   m_GameObject: {fileID: 76130801970316259}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -103,13 +103,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76130801970316259}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3000
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 4.59
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 64
   m_CollisionDetection: 0
 --- !u!114 &76130801970316258
 MonoBehaviour:
@@ -124,10 +124,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
-  type: 0
-  duration: 0
+  type: 1
+  MaxDuration: 0
+  curDuration: 0
   resistence: 0
-  force: 0
+  force: 1
+  Price: 0
   canMove: 1
   dragging: 0
   burning: 0
@@ -135,3 +137,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   mainSprite: {fileID: 21300000, guid: 65e34c779e769dc45b361db366b0189c, type: 3}
+  collisioningItems: []

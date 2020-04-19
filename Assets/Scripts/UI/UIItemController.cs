@@ -61,7 +61,7 @@ public class UIItemController : MonoBehaviour {
         timer = 0;
     }
     private void Up() {
-        Debug.Log(downPos + " : " + GetPointClicked() + " ---- " + Vector3.Distance(downPos, GetPointClicked()));
+
         if (Vector3.Distance(downPos, GetPointClicked()) < 1f && timer <= time) {
             SpawnerController.Instance.MovePickedItemToSpawn();
             UIManager.Instance.TryHide(ID);

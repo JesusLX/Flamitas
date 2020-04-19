@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireController : MonoBehaviour {
+public class FireController : Singleton<FireController> {
     public LayerMask layerMask;
     public float fireForce;
     public bool burning;
@@ -13,7 +13,7 @@ public class FireController : MonoBehaviour {
         while (true) {
             float force = 0;
             Item tmp;
-            foreach (Collider collisions in Physics.OverlapBox(transform.position, Vector3.one, transform.rotation, layerMask)) {
+            foreach (Collider collisions in Physics.OverlapBox(transform.position, transform.localScale / 2, transform.rotation, layerMask)) {
                 tmp = collisions.GetComponent<Item>();
                 if (tmp.burning) {
                     force += tmp.force;
@@ -22,6 +22,8 @@ public class FireController : MonoBehaviour {
             fireForce = force;
             if (fireForce <= 0) {
                 burning = false;
+            } else {
+                burning = true;
             }
 
             yield return new WaitForSeconds(.2f);
@@ -31,7 +33,7 @@ public class FireController : MonoBehaviour {
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
         //Draw the next cross position
-        Gizmos.DrawWireCube(transform.position,Vector3.one*4);
+        Gizmos.DrawWireCube(transform.position, transform.localScale);
         
     }
 }
