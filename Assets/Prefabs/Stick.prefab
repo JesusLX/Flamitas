@@ -124,6 +124,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 567
   mainSprite: {fileID: 21300000, guid: 7d90d27014dd647459ccae6dbb01eca4, type: 3}
+  material: {fileID: 2100000, guid: 5c47656a3b31bf74c99dbceec4640af6, type: 2}
   collisioningItems: []
 --- !u!64 &8836266534005288790
 MeshCollider:

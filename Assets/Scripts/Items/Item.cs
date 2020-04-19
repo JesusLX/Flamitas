@@ -17,6 +17,7 @@ public class Item : MonoBehaviour {
     private Rigidbody _rb;
     public LayerMask layerMask;
     public Sprite mainSprite;
+    public Material material;
     public List<Item> collisioningItems;
     FireController fireZone;
 
@@ -24,7 +25,7 @@ public class Item : MonoBehaviour {
         collisioningItems = new List<Item>();
         GameManager.Instance.OnMouseUpListener += OnMouseUp;
         _rb = GetComponent<Rigidbody>();
-
+        GetComponent<Renderer>().material = new Material(material);
         canMove = true;
     }
 
@@ -118,6 +119,7 @@ public class Item : MonoBehaviour {
 
     public void addDuraton(float dur) {
         curDuration += dur;
+        GetComponent<Renderer>().material.SetFloat("Slider_Fill", ((MaxDuration - curDuration) / MaxDuration) - .85f);
     }
     public void Hide() {
         GetComponent<Collider>().enabled = false;

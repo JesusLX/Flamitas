@@ -138,6 +138,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 567
   mainSprite: {fileID: 21300000, guid: 65e34c779e769dc45b361db366b0189c, type: 3}
+  material: {fileID: 2100000, guid: 5c47656a3b31bf74c99dbceec4640af6, type: 2}
   collisioningItems: []
 --- !u!1001 &3687699128368560419
 PrefabInstance:

@@ -137,4 +137,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 567
   mainSprite: {fileID: 21300000, guid: e18f5b0f075b1ce49a151455f82094c5, type: 3}
+  material: {fileID: 2100000, guid: 5c47656a3b31bf74c99dbceec4640af6, type: 2}
   collisioningItems: []
