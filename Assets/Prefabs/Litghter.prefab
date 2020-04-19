@@ -129,7 +129,7 @@ MonoBehaviour:
   curDuration: 0
   resistence: 0
   force: 1
-  Price: 0
+  Price: 1
   canMove: 1
   dragging: 0
   burning: 0

@@ -30,7 +30,7 @@ public class UIManager : Singleton<UIManager> {
         Transform tItem = InventoryLayout.transform.Find(itemID.ToString());
         GameObject item;
         if(tItem == null) {
-             item = Instantiate(itemsButPref, InventoryLayout.transform);
+            item = Instantiate(itemsButPref, InventoryLayout.transform);
             UIItemController itemCont = item.GetComponent<UIItemController>();
             itemCont.image.sprite = SpawnerController.Instance.ItemsPrefabs.Find(o => o.GetComponent<Item>().ID == itemID).GetComponent<Item>().mainSprite;
             itemCont.ID = itemID;
