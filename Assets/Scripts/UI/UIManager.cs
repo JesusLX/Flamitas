@@ -44,6 +44,8 @@ public class UIManager : Singleton<UIManager> {
 
         if (count == -1) {
             item.SetActive(false);
+        } else {
+            item.SetActive(true);
         }
     }
     public void HideItem(int itemID) {

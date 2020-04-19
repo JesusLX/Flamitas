@@ -23,7 +23,7 @@ public class GameManager : Singleton<GameManager> {
             if (secondsTimer <= secondsTime) {
                 secondsTimer += Time.deltaTime;
             } else {
-                coins++;
+                updateCoins(1);
                 secondsTimer = 0;
             }
         }
