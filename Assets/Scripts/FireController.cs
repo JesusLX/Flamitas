@@ -36,7 +36,7 @@ public class FireController : Singleton<FireController> {
                 foreach (ParticleSystem ps in childsPS) {
                     var mEmision = ps.emission;
                     var mShape = ps.shape;
-                    mEmision.rateOverTime = force;
+                    mEmision.rateOverTime = force*2;
                     mShape.radius = force * maxRadius / maxParticlesEmision;
                 }
             }
