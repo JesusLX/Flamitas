@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4021,8 +4021,8 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: FireBurning
-    clip: {fileID: 8300000, guid: 7bac48e4f522ef74dba38cad85d57724, type: 3}
-    volume: 0.59
+    clip: {fileID: 8300000, guid: 32071535ea82e1145b604ec312eb6363, type: 3}
+    volume: 0.29
     pitch: 1
     loop: 1
     source: {fileID: 0}
