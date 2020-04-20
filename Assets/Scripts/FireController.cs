@@ -29,8 +29,12 @@ public class FireController : Singleton<FireController> {
             if (fireForce <= 0) {
                 burning = false;
                 parentPS.Stop();
+                AudioManager.Instance.Pause("FireBurning");
             } else {
                 burning = true;
+                if(!AudioManager.Instance.IsPlaying("FireBurning"))
+                AudioManager.Instance.Play("FireBurning");
+
                 if (!parentPS.isPlaying)
                     parentPS.Play();
                 foreach (ParticleSystem ps in childsPS) {
