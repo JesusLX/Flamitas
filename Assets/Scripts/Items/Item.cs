@@ -69,7 +69,7 @@ public class Item : MonoBehaviour {
 #if UNITY_EDITOR
                 mouse = Input.mousePosition;
 #else
-                mouse = /*Input.mousePosition;*/Input.GetTouch(0).position;
+                smouse = /*Input.mousePosition;*/Input.GetTouch(0).position;
 #endif
                 Ray castPoint = Camera.main.ScreenPointToRay(mouse);
                 RaycastHit hit;
