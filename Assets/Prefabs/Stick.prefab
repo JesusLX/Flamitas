@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4074551112231702220}
-  m_LocalRotation: {x: -0.38268343, y: 0.92387956, z: -0, w: 0}
+  m_LocalRotation: {x: 0.7390434, y: -0.67365783, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -45}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 264.7}
 --- !u!33 &4074551112231702216
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -116,16 +116,17 @@ MonoBehaviour:
   curDuration: 0
   resistence: 1
   force: 2
-  Price: 5
+  Price: 2
   canMove: 1
   dragging: 0
   burning: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 567
-  mainSprite: {fileID: 21300000, guid: 7d90d27014dd647459ccae6dbb01eca4, type: 3}
+  mainSprite: {fileID: 21300000, guid: 1ac912a39a5a8a948b26d2c3a9fde876, type: 3}
   material: {fileID: 2100000, guid: 5c47656a3b31bf74c99dbceec4640af6, type: 2}
   collisioningItems: []
+  nextBurn: 0.5
 --- !u!64 &8836266534005288790
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -20,6 +20,7 @@ public class Item : MonoBehaviour {
     public Material material;
     public List<Item> collisioningItems;
     FireController fireZone;
+    public float nextBurn = .5f;
 
     private void Awake() {
         collisioningItems = new List<Item>();
@@ -35,10 +36,11 @@ public class Item : MonoBehaviour {
         }
     }
     public void Init() {
+        Debug.Log("Init");
         curDuration = MaxDuration;
         if (type == ItemType.Lighter) {
             burning = true;
-        } 
+        }
         canMove = true;
     }
     private void OnMouseDown() {
@@ -57,6 +59,9 @@ public class Item : MonoBehaviour {
     }
 
     private void Update() {
+        if (transform.position.y < 0) {
+            transform.position = new Vector3(transform.position.x, 2f, transform.position.z);
+        }
         if (canMove) {
             if (dragging) {
                 Vector3 mouse = Input.mousePosition;
@@ -66,6 +71,18 @@ public class Item : MonoBehaviour {
 
                     transform.position = new Vector3(hit.point.x, Mathf.Clamp(transform.position.y, 0.5f, 5), hit.point.z);
                 }
+                // if () {
+                float speed = 10F; transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 180, 0), Time.deltaTime * speed);
+
+                //}
+            }
+        }
+        if (burning) {
+            if (GetComponent<Renderer>().material.GetFloat("Slider_Fill") != nextBurn) {
+                //Debug.Log("De " + GetComponent<Renderer>().material.GetFloat("Slider_fll") + " a " + nextBurn + " -> " + Mathf.Lerp(GetComponent<Renderer>().material.GetFloat("Slider_fll"), nextBurn, Time.deltaTime));
+                float next = Mathf.Lerp(GetComponent<Renderer>().material.GetFloat("Slider_Fill"), nextBurn, Time.deltaTime);
+                Debug.Log(next);
+                GetComponent<Renderer>().material.SetFloat("Slider_Fill", next);
             }
         }
     }
@@ -119,11 +136,13 @@ public class Item : MonoBehaviour {
 
     public void addDuraton(float dur) {
         curDuration += dur;
-        GetComponent<Renderer>().material.SetFloat("Slider_Fill", ((MaxDuration - curDuration) / MaxDuration) - .85f);
+        nextBurn = ((MaxDuration - curDuration) / MaxDuration) - .55f;
     }
     public void Hide() {
+        burning = false;
+        GetComponent<Renderer>().material.SetFloat("Slider_Fill", -.85f);
+
         GetComponent<Collider>().enabled = false;
         gameObject.SetActive(false);
     }
-
 }

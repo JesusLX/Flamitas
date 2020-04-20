@@ -129,13 +129,14 @@ MonoBehaviour:
   curDuration: 0
   resistence: 4
   force: 5
-  Price: 0
+  Price: 5
   canMove: 1
   dragging: 0
   burning: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 567
-  mainSprite: {fileID: 21300000, guid: e18f5b0f075b1ce49a151455f82094c5, type: 3}
+  mainSprite: {fileID: 21300000, guid: dfdce7c30f003684ab2beb2aaf395e2d, type: 3}
   material: {fileID: 2100000, guid: 5c47656a3b31bf74c99dbceec4640af6, type: 2}
   collisioningItems: []
+  nextBurn: 0.5
