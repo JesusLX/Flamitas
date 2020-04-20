@@ -77,7 +77,7 @@ public class Item : MonoBehaviour {
                     transform.position = new Vector3(hit.point.x, Mathf.Clamp(transform.position.y, 0.5f, 5), hit.point.z);
                 }
                 // if () {
-                float speed = 10F; transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 180, 0), Time.deltaTime * speed);
+                //float speed = 10F; transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 180, 0), Time.deltaTime * speed);
 
                 //}
             }
