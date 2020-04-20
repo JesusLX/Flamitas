@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StickFire
+  m_Name: BallFire
   m_Shader: {fileID: -6465566751694194690, guid: 987ad23369025f148ac2003c2603dc19,
     type: 3}
   m_ShaderKeywords: 
@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_D1180B5F:
-        m_Texture: {fileID: 2800000, guid: 59170284588abf14faafbcd60df16fbd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6c8f2a9563af5ec4682c467b98557cde, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -72,7 +72,7 @@ Material:
     - Vector1_900F7C2E: -0.79
     - Vector1_B52F4B20: -1.83
     - Vector1_D3993DBF: -0.85
-    - Vector1_D696E5AF: 0.04
+    - Vector1_D696E5AF: 0.041
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1

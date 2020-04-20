@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2a0d26ed9e1aa6349aa61ab3d63c36c9, type: 2}
+  - {fileID: 2100000, guid: f92975e76aa0fa04c9d3345994e4f1bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 567
   mainSprite: {fileID: 21300000, guid: 1ac912a39a5a8a948b26d2c3a9fde876, type: 3}
-  material: {fileID: 2100000, guid: 2a0d26ed9e1aa6349aa61ab3d63c36c9, type: 2}
+  material: {fileID: 0}
   collisioningItems: []
   nextBurn: 0.5
 --- !u!64 &8836266534005288790
