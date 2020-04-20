@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StickFire
+  m_Name: VuduFire
   m_Shader: {fileID: -6465566751694194690, guid: 987ad23369025f148ac2003c2603dc19,
     type: 3}
   m_ShaderKeywords: 
@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_D1180B5F:
-        m_Texture: {fileID: 2800000, guid: c19b68dfa04312f42b144e179b7b476e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8d891efca4539e44f90471a0cb84f112, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:

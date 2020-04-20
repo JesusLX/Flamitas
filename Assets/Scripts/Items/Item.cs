@@ -27,7 +27,7 @@ public class Item : MonoBehaviour {
         collisioningItems = new List<Item>();
         GameManager.Instance.OnMouseUpListener += OnMouseUp;
         _rb = GetComponent<Rigidbody>();
-        GetComponent<Renderer>().material = new Material(material);
+        GetComponent<Renderer>().material = new Material(GetComponent<Renderer>().material);
         canMove = true;
     }
 
