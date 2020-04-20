@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472076522017255648}
-  m_LocalRotation: {x: -0.9767682, y: -0.009391529, z: -0.005099823, w: 0.2140319}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -155.278, y: -0.375, z: -1.019989}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1472076522017255661
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5865814567948ab4db9f82b83038156c, type: 2}
+  - {fileID: 2100000, guid: 149ed44b84c94bd44afab653aa2111b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 567
-  mainSprite: {fileID: 21300000, guid: dfdce7c30f003684ab2beb2aaf395e2d, type: 3}
+  mainSprite: {fileID: 21300000, guid: 8ac0bbfcdadcd674a9a91c58e4092560, type: 3}
   material: {fileID: 2100000, guid: e3448208977f1434491b1b29c451c78f, type: 2}
   collisioningItems: []
   nextBurn: 0.5
