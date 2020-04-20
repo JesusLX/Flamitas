@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class Item : MonoBehaviour {
 
@@ -64,7 +65,12 @@ public class Item : MonoBehaviour {
         }
         if (canMove) {
             if (dragging) {
-                Vector3 mouse = Input.mousePosition;
+                Vector3 mouse;
+#if UNITY_EDITOR
+                mouse = Input.mousePosition;
+#else
+                mouse = /*Input.mousePosition;*/Input.GetTouch(0).position;
+#endif
                 Ray castPoint = Camera.main.ScreenPointToRay(mouse);
                 RaycastHit hit;
                 if (Physics.Raycast(castPoint, out hit, Mathf.Infinity, layerMask)) {
