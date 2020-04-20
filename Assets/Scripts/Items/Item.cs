@@ -18,7 +18,6 @@ public class Item : MonoBehaviour {
     private Rigidbody _rb;
     public LayerMask layerMask;
     public Sprite mainSprite;
-    public Material material;
     public List<Item> collisioningItems;
     FireController fireZone;
     public float nextBurn = .5f;

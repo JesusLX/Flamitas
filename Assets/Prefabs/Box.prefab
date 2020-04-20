@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472076522017255648}
-  m_Mesh: {fileID: 5060444177187149915, guid: 275fdf6a1b6df5a4291a3140e8f9dc3f, type: 3}
+  m_Mesh: {fileID: 973877516759717424, guid: 7328e11eb26607943b2319e901fac8ad, type: 3}
 --- !u!23 &1472076522017255660
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 567
-  mainSprite: {fileID: 21300000, guid: 8ac0bbfcdadcd674a9a91c58e4092560, type: 3}
+  mainSprite: {fileID: 21300000, guid: e2551c4f325e382468926f94cae4802e, type: 3}
   material: {fileID: 2100000, guid: e3448208977f1434491b1b29c451c78f, type: 2}
   collisioningItems: []
   nextBurn: 0.5
