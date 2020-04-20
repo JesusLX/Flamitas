@@ -19,12 +19,19 @@ public class GameManager : Singleton<GameManager> {
         UIManager.Instance.UpdateItems();
     }
     private void Update() {
-        if (FireController.Instance.burning) {
+        if (FireController.Instance.burning && FireController.Instance.fireForce > 0) {
             if (secondsTimer <= secondsTime) {
                 secondsTimer += Time.deltaTime;
             } else {
                 updateCoins(1);
                 secondsTimer = 0;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (ShopManager.Instance.showingShop) {
+                ShopManager.Instance.showShop();
+            } else {
+                Application.Quit();
             }
         }
     }

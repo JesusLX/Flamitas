@@ -10,7 +10,7 @@ public class ShopManager : Singleton<ShopManager> {
     public GameObject layoutShopPanel;
     public GameObject UIShopItemPrefab;
 
-    private bool showingShop = false;
+    public bool showingShop = false;
 
     private void Start() {
         // Supuestamente solo se llama una vez :)

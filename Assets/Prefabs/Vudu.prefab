@@ -28,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472076522017255648}
-  m_LocalRotation: {x: -0.9767682, y: -0.009391529, z: -0.005099823, w: 0.2140319}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -155.278, y: -0.375, z: -1.019989}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!33 &1472076522017255661
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93,8 +93,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.39468694, z: 1.7473212}
+  m_Center: {x: 0, y: -0, z: -0.03388554}
 --- !u!54 &1472076522017255662
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -109,7 +109,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &1472076522017255649
 MonoBehaviour:
@@ -129,7 +129,7 @@ MonoBehaviour:
   curDuration: 0
   resistence: 4
   force: 5
-  Price: 5
+  Price: 0
   canMove: 1
   dragging: 0
   burning: 0
