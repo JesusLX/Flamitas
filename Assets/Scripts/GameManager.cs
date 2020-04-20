@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager> {
     public Action OnMouseUpListener;
@@ -57,5 +58,9 @@ public class GameManager : Singleton<GameManager> {
     public void updateCoins(int newCoins) {
         this.coins += newCoins;
         ShopManager.Instance.updateCoinsText();
+    }
+
+    public void restartGame() {
+        SceneManager.LoadScene(0);
     }
 }

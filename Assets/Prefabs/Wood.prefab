@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 1
   type: 0
-  MaxDuration: 7
+  MaxDuration: 10
   curDuration: 0
   resistence: 4
   force: 5

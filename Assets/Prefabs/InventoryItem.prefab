@@ -99,7 +99,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 100
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 260
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -399,7 +399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 222.18999, y: -17.5}
+  m_AnchoredPosition: {x: 228, y: -17.5}
   m_SizeDelta: {x: 128.21, y: 113.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6154639262494105650
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 333
+  m_text: 12
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 66fd63e11ad50ba438c28485e6b0c200, type: 2}
   m_sharedMaterial: {fileID: 5604257257337276184, guid: 66fd63e11ad50ba438c28485e6b0c200,
@@ -457,14 +457,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 58.45
+  m_fontSize: 69.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 1
   m_fontSizeMax: 100
   m_fontStyle: 0
-  m_textAlignment: 4112
+  m_textAlignment: 4097
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -0.59883326, w: 0}
   m_textInfo:
     textComponent: {fileID: 6154639262494105651}
-    characterCount: 3
+    characterCount: 2
     spriteCount: 0
     spaceCount: 0
     wordCount: 1

@@ -128,8 +128,8 @@ MonoBehaviour:
   MaxDuration: 5
   curDuration: 0
   resistence: 5
-  force: -8
-  Price: 0
+  force: -1
+  Price: 15
   canMove: 1
   dragging: 0
   burning: 0

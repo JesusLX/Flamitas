@@ -125,11 +125,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 4
   type: 0
-  MaxDuration: 7
+  MaxDuration: 11
   curDuration: 0
-  resistence: 4
-  force: 5
-  Price: 0
+  resistence: 9
+  force: 12
+  Price: 25
   canMove: 1
   dragging: 0
   burning: 0
