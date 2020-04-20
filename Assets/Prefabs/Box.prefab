@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1472076522017255660}
   - component: {fileID: 1472076522017255662}
   - component: {fileID: 1472076522017255649}
-  - component: {fileID: -6353920443316125663}
+  - component: {fileID: 7123203336020511217}
   m_Layer: 8
   m_Name: Box
   m_TagString: Untagged
@@ -126,8 +126,8 @@ MonoBehaviour:
   mainSprite: {fileID: 21300000, guid: e2551c4f325e382468926f94cae4802e, type: 3}
   collisioningItems: []
   nextBurn: 0.5
---- !u!64 &-6353920443316125663
-MeshCollider:
+--- !u!65 &7123203336020511217
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -136,7 +136,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5060444177187149915, guid: 275fdf6a1b6df5a4291a3140e8f9dc3f, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.54125255, y: 0.6259165, z: 0.5984222}
+  m_Center: {x: 0, y: -0.04295875, z: -0.033828616}
