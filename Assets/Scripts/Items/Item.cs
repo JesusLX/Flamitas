@@ -65,11 +65,8 @@ public class Item : MonoBehaviour {
         if (canMove) {
             if (dragging) {
                 Vector3 mouse;
-#if UNITY_EDITOR
                 mouse = Input.mousePosition;
-#else
-                mouse = /*Input.mousePosition;*/Input.GetTouch(0).position;
-#endif
+               // mouse = /*Input.mousePosition;*/Input.GetTouch(0).position;
                 Ray castPoint = Camera.main.ScreenPointToRay(mouse);
                 RaycastHit hit;
                 if (Physics.Raycast(castPoint, out hit, Mathf.Infinity, layerMask)) {
